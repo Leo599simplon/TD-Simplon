@@ -1,0 +1,55 @@
+.voiture
+{
+    z-index: 3;
+    display:block;
+    position: relative;
+    top: 250px;
+    left: 200px;
+    right: 200px;
+    bottom: 200px;
+}
+
+.roues
+{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-right:460px;
+    padding-left:467px;
+}
+.roue1
+{
+    animation-name: rotation;
+    animation-duration: 10ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation 
+{
+    0% {transform: rotate(60deg)}
+    20% {transform: rotate(120deg)}
+    40% {transform: rotate(160deg)}
+    60% {transform: rotate(220deg)}
+    80% {transform: rotate(280deg)}
+    100% {transform: rotate(340deg)}
+}
+
+.roue2
+{
+    animation-name: rotation;
+    animation-duration: 10ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation 
+{
+    0% {transform: rotate(60deg)}
+    20% {transform: rotate(120deg)}
+    40% {transform: rotate(160deg)}
+    60% {transform: rotate(220deg)}
+    80% {transform: rotate(280deg)}
+    100% {transform: rotate(340deg)}
+}
+

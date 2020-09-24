@@ -1,0 +1,34 @@
+.taille_enveloppe
+{
+    width: 1000px;
+    height: 600px;
+}
+/*  */
+.cadre_entier
+{
+    border: 2px solid black;
+}
+
+.zoneDeTexte
+{
+
+    padding-left: 350px;
+}
+
+.timbre
+{
+    width: 150px;
+}
+
+.adresse
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 55px;
+    color: black;
+}
+
+.ligne{
+    border-top: 2px solid black;
+    margin-bottom: 85px;
+    width: 70%;
+} 

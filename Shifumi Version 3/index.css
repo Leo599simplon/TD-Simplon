@@ -1,0 +1,316 @@
+body
+ {
+     background-color: black;
+ }
+.Titre
+{
+    box-shadow: 0 0 20px 4px #FF6347, 
+    0 0 10px 30px #412028, 
+    20px 0 10px 20px #B0E0E6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 50%;
+    text-align: center;
+    border: black solid 4px;
+    border-radius: 6px;
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+
+}
+
+.Bloc_haut
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right:auto ;
+    border-radius: 20px;
+    border: solid black 3px;
+	width: 50%;
+    height: 90px;
+    margin-bottom: 5px;
+    background-color: white;
+
+
+}
+
+.NomDuJoueur
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    border: solid black 3px;
+    width: 140px;
+    height: 85px;
+    border-radius: 50px;
+}
+
+.IA
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    border: solid black 3px;
+    width: 140px;
+    height: 85px;
+    border-radius: 50px;
+    background-image: url(Images/bot.jpg);
+    background-size: 120px;
+    background-position: center;
+}
+
+.compteur
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    border: solid black 3px;
+    width: 140px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.Bloc_milieu
+{
+    background-color: white;
+    display: flex;
+    flex-flow:column;
+    margin-left: auto;
+    margin-right:auto ;
+    border-radius: 20px;
+    border: solid black 3px;
+	width: 90%;
+    height: 400px;
+}
+
+.LED_block
+{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+}
+.LED_block_1
+{
+    margin-left: 10px;
+    width: 100%;
+    height: 30px;
+    display: flex;    
+}
+
+.LED_block_2
+{
+    margin-right: 10px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: right; 
+}
+.LED_1
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+    border: solid black;
+}
+.LED_2
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: solid black;
+}
+.LED_3
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: solid black;
+}
+.LED_4
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: solid black;
+}
+.LED_5
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: solid black;
+}
+.LED_6
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: solid black;
+}
+
+
+
+.Combat
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.joueur1
+
+{
+    width: 100px;
+    height: 100px;
+    border:2px solid black;
+    border-radius: 20px;
+}
+
+.Versus
+{
+    width: 100px;
+    height: 100px;
+    background-image: url(Images/Versus.png);
+    background-size: 150px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+}
+
+.joueur2
+{
+    width: 100px;
+    height: 100px;
+    border:2px solid black;
+    border-radius: 20px;   
+}
+.Armes
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: space-around;    
+}
+.Pierre
+{
+    width: 150px;
+    height: 150px;
+    border:2px solid black;
+    border-radius: 20px;
+    background-image: url(Images/pierre.jpeg);
+    background-size: contain;
+}
+
+.Feuille
+{
+    width: 150px;
+    height: 150px;
+    border:2px solid black;
+    border-radius: 20px;
+    background-image: url(Images/feuille.jpeg);
+    background-size: contain;
+}
+
+.Ciseaux
+{
+    width: 150px;
+    height: 150px;
+    border:2px solid black;
+    border-radius: 20px;  
+    background-image: url(Images/ciseaux.png);
+    background-size: 155px;
+}
+
+.BasPage
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 60%;
+    height: 120px;
+}
+
+.btnReset
+{   
+    width: 100px;
+    height: 100px;
+    border:2px solid black;
+    border-radius: 50px;
+    background-image: url(Images/reset.jpg);
+    background-size: 150px;
+    background-position: center;
+}
+.btnPlay
+{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border:2px solid black;
+    border-radius: 50px;
+    background-image: url(Images/btnplay.png);
+    background-size: contain;
+}
+
+.NbreVictoire
+{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border:5px solid rgb(67, 67, 158);
+    border-radius: 50px;
+    font-size: 250%;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.scoreRecorded
+{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border:5px solid rgb(170, 53, 53);
+    border-radius: 50px;
+    font-size: 250%;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+
+.fin
+{
+    display: flex;
+    justify-content: center;
+}
+
+.tableauDesScores
+{
+    width: 450px;
+    height: 150px;
+    border:2px solid black;
+    background-color: white;
+    border-radius: 20px;  
+}

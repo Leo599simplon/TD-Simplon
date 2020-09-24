@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifumi</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="Titre">
+        <h1>BIENVENUE AU MISHOUFI</h1>
+    </div>
+    <div class="Bloc_haut">
+        <div class="NomDuJoueur">
+            <h2 id="ChoisirNom">Joueur 1</h2>
+        </div>
+        <div class="Versus"><img src="Images/versus.png" alt=""></div>
+        <div class="IA">
+            <h2></h2>
+        </div>
+    </div>
+    <div class="Bloc_milieu">
+        <div class="LED_block">
+            <div class="LED_block_1">
+                <div class="LED_1" id="led1"></div>
+                <div class="LED_2" id="led2"></div>
+                <div class="LED_3" id="led3"></div>
+            </div>
+            <div class="LED_block_2">
+                <div class="LED_4" id="led4"></div>
+                <div class="LED_5" id="led5"></div>
+                <div class="LED_6" id="led6"></div>
+            </div>
+        </div>
+        <div class="fin" id="fini"></div>
+        <div class="Combat">
+            <div class="joueur1" id="Choix1"></div>
+            <div class="compteur">
+                <h1 id="nbcompteur">0</h1>
+            </div>
+            <div class="joueur2" id="Choix2"></div>
+        </div>
+        <div class="Armes">
+            <div class="Pierre">
+                <img id="img1" onclick="selectionAr()" src="Images/pierre.jpeg" alt="" height="150px" width="150px">
+            </div>
+            <div class="Feuille">
+                <img id="img2" onclick="selectionAr2()" src="Images/feuille.jpeg" alt="" height="150px" width="150px">
+            </div>
+            <div class="Ciseaux">
+                <img id="img3" onclick="selectionAr3()" src="Images/ciseaux.png" alt="" height="150px" width="150px">
+            </div>
+        </div>
+    </div>
+    <div class="BasPage">
+        <div class="btnPlay" onclick="afficher()"></div>
+        <div class="NbreVictoire" id="NbVictoire">0</div>
+        <div class="scoreRecorded" id="meilleurScore">0</div>
+        <div class="btnReset" onclick="gameOver()"></div>
+    </div>
+    <div class="tablesDesScores" id="tableauScore">
+        <div class="nomDesJoueurs" id="nomJoueurs"></div>
+        <div class="scoresDesJoueurs" id="scoreJoueurs"></div>
+    </div>
+
+</body>
+
+</html>

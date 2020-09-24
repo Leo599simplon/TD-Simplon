@@ -1,0 +1,44 @@
+body
+{
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url("/home/simplon/Bureau/Naruto/image/BGMontagnes.png");
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: black;
+    float: none;
+    position: relative;
+    display: flex;
+}
+
+main
+{
+    background-image: url(/home/simplon/Bureau/Naruto/image/ensembleFond.png);
+    background-repeat: no-repeat;
+    width: 1689px;
+    height: 2552px;
+    margin: auto;
+}
+
+nav
+{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+#menu
+{
+    background-image: url(/home/simplon/Bureau/Naruto/MenuTop/CadreMenu.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#boutique
+{
+    background-image: url(/home/simplon/Bureau/Naruto/image/menuTop/btnBoutique.png);
+width:available;
+height:available;
+}
