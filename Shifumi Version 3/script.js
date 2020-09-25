@@ -24,6 +24,7 @@ function mathRandomInt(a, b) {
 function afficher() {
     var nom = prompt("Veuillez entrer votre pseudo");
     document.getElementById("ChoisirNom").innerText = nom;
+    document.getElementById("nomJoueurs").innerText = nom;
 }
 //Choix de l'arme par l'user
 function selectionAr() {
@@ -211,13 +212,24 @@ function rejouer() {
     document.getElementById("NbCompteur").innerText = "Rejouer?";
 }*/
 
-function Tableau(nomJoueur,scoreUser)
+/*function Tableau(nom,scoreUser)
 {
-    this.nomJoueur = nomJoueur
-    this.scoreUser = scoreUser
-    document.getElementById("Scores").innerText = nomJoueur + scoreUser;
+    this.nom = nom;
+    this.scoreUser = scoreUser;
+    document.getElementById("nomJoueurs").innerText = this.nom;
+    document.getElementById("scoreJoueurs").innerText = this.scoreUser;
 }
+*/
 
-var newPlayer = this.nomJoueur + ' ' + this.scoreUser
-
-    
+function main()
+{
+     var players = new Array();
+     var scores = new Array();
+ 
+ 
+    for(i = 0; i<10; i++){
+          players[i] = document.getElementById("nomJoueurs").innerText = "Player " + (i+1) + " : ";
+          scores[i] =  document.getElementById("scoreJoueurs").innerText = "Score " + (players[i]) + " : ";
+ 
+     }
+    }

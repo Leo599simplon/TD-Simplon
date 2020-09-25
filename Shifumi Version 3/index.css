@@ -306,11 +306,36 @@ body
     justify-content: center;
 }
 
-.tableauDesScores
+.tablesDesScores
 {
+    margin: auto;
+    display: flex;
+    justify-content: stretch;
     width: 450px;
-    height: 150px;
-    border:2px solid black;
+    height: 300px;
     background-color: white;
+    border:7px solid rgb(20, 55, 167);
     border-radius: 20px;  
+}
+
+.nomDesJoueurs
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    width: 225px;
+    height: 300px;
+    border:6px solid black;
+    border-radius: 3px;
+}
+
+.scoresDesJoueurs
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    width: 225px;
+    height: 300px;
+    border:6px solid black;
+    border-radius: 3px;
 }
