@@ -7,6 +7,12 @@ var scoreIA = 0;
 var victoireUser = 0;
 var meilleurScore = 0;
 
+
+
+
+
+
+
 //Todo : vérifier perte d'affichage victoire/défaite au bout de plusieurs parties + bordures joueur rémanente
 
 
@@ -24,7 +30,6 @@ function mathRandomInt(a, b) {
 function afficher() {
     var nom = prompt("Veuillez entrer votre pseudo");
     document.getElementById("ChoisirNom").innerText = nom;
-    document.getElementById("nomJoueurs").innerText = nom;
 }
 //Choix de l'arme par l'user
 function selectionAr() {
@@ -109,6 +114,8 @@ function comparaison() {
             case 3:
                 Ledcolor("led3", "green", "led6", "red");
                 Resultat();
+                tri();
+                affiche();
 
                 break;
 
@@ -202,34 +209,43 @@ function bestScore() {
 }
 
 
+//import a test
+var score = document.getElementById("NbVictoire").innerText
+var joueur = document.getElementById("ChoisirNom").innerText
+var classement = [];
+function tri(){
+    classement.sort(function(a,b){return b.score-a.score;});
+}
+ 
+function affiche(){
+    result = "";
+    for(var i=0;i<classement.length;i++)
+        result += classement[i].joueur+' : '+classement[i].joueur+'\n';
+        document.getElementById("scoreA").innerText = score;
+        document.getElementById("joueurA").innerText = joueur;
+}
+
+
 /*
 function delaiVictoire() {
     setTimeout(function () { gameOver(); }, 3000);
 }
 
 
-function rejouer() {
-    document.getElementById("NbCompteur").innerText = "Rejouer?";
-}*/
 
-/*function Tableau(nom,scoreUser)
+
+function classement()
 {
-    this.nom = nom;
-    this.scoreUser = scoreUser;
-    document.getElementById("nomJoueurs").innerText = this.nom;
-    document.getElementById("scoreJoueurs").innerText = this.scoreUser;
+  this.joueur = [];
+  this.score = []; 
+}
+var Tab_joueur = new classement();
+ 
+function ajouter();
+{
+  Tab_joueur.joueur.push(document.nomJoueurs.joueur.value);
+  Tab_joueur.score.push(document.scoreJoueurs.score.value);
 }
 */
 
-function main()
-{
-     var players = new Array();
-     var scores = new Array();
- 
- 
-    for(i = 0; i<10; i++){
-          players[i] = document.getElementById("nomJoueurs").innerText = "Player " + (i+1) + " : ";
-          scores[i] =  document.getElementById("scoreJoueurs").innerText = "Score " + (players[i]) + " : ";
- 
-     }
-    }
+

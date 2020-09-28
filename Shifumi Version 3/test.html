@@ -19,3 +19,45 @@
     </body>
 </html>
 
+<form id="ajouter">
+    <input type="text" name="equipe" value="equipe" />
+    <input type="text" name="score" value="score" />
+    <input type="button" id="ajout" value="ajouter" />
+    <br/>
+    <br/>
+    <input type="button" id="trier" value="trier" />
+    <input type="button" id="affiche" value="affiche" />
+  </form>
+  </body>
+  <script type="text/javascript">
+
+
+
+
+
+
+  var classement = [];
+   
+  function tri(){
+      classement.sort(function(a,b){return b.score-a.score;});
+  }
+   
+  function affiche(){
+      result = "";
+      for(var i=0;i<classement.length;i++)
+          result += classement[i].joueur+' : '+classement[i].score+'\n';
+          document.getElementById("joueurA").innerText = joueur;
+          document.getElementById("scoreA").innerText = score;
+  }
+
+
+  /*
+  function ajouter(){
+      classement.push({equipe:document.forms['ajouter'].elements['equipe'].value,score:document.forms['ajouter'].elements['score'].value});
+  }
+   
+  document.forms['ajouter'].elements['ajout'].onclick = ajouter; 
+  document.forms['ajouter'].elements['trier'].onclick = tri;
+  document.forms['ajouter'].elements['affiche'].onclick = affiche;
+ 
+*/
