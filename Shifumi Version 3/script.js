@@ -209,7 +209,7 @@ function bestScore() {
 }
 
 
-//import a test
+//a test
 var score = document.getElementById("NbVictoire").innerText
 var joueur = document.getElementById("ChoisirNom").innerText
 var classement = [];
