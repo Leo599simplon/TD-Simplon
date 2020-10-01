@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>TaskList</title>
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="d-flex justify-content-center">
+					Listing des tâches
+				</h3>
+				<div class="row">
+					<div class="col-md-4">
+
+						<button type="button" class="btn btn-success">
+							Options de tri
+						</button>
+					</div>
+					<div class="col-md-4">
+
+						<button type="button" class="btn btn-success">
+							créer une liste
+						</button>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-6">
+
+								<button type="button" class="btn btn-success">
+									accès aux listes
+								</button>
+							</div>
+							<div class="col-md-6">
+
+								<button type="button" class="btn btn-success">
+									Supprimer une liste
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th>
+								#
+							</th>
+							<th>
+								Product
+							</th>
+							<th>
+								Payment Taken
+							</th>
+							<th>
+								Status
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								1
+							</td>
+							<td>
+								TB - Monthly
+							</td>
+							<td>
+								01/04/2012
+							</td>
+							<td>
+								Default
+							</td>
+						</tr>
+						<tr class="table-active">
+							<td>
+								1
+							</td>
+							<td>
+								TB - Monthly
+							</td>
+							<td>
+								01/04/2012
+							</td>
+							<td>
+								Approved
+							</td>
+						</tr>
+						<tr class="table-success">
+							<td>
+								2
+							</td>
+							<td>
+								TB - Monthly
+							</td>
+							<td>
+								02/04/2012
+							</td>
+							<td>
+								Declined
+							</td>
+						</tr>
+						<tr class="table-warning">
+							<td>
+								3
+							</td>
+							<td>
+								TB - Monthly
+							</td>
+							<td>
+								03/04/2012
+							</td>
+							<td>
+								Pending
+							</td>
+						</tr>
+						<tr class="table-danger">
+							<td>
+								4
+							</td>
+							<td>
+								TB - Monthly
+							</td>
+							<td>
+								04/04/2012
+							</td>
+							<td>
+								Call in to confirm
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-4">
+							</div>
+							<div class="col-md-4">
+							</div>
+							<div class="col-md-4">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-4">
+							</div>
+							<div class="col-md-4">
+							</div>
+							<div class="col-md-4">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<nav>
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#">Previous</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">1</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">2</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">3</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">4</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">5</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">Next</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
