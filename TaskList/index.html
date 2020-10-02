@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>TaskList</title>
+	<title>ToDoList</title>
 
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -20,205 +20,113 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
 		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
 		crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="index.css">
+		<script src="ToDoFunction.js"></script>
 </head>
 
 <body>
 
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<h3 class="d-flex justify-content-center">
-					Listing des tâches
-				</h3>
-				<div class="row">
-					<div class="col-md-4">
-
-						<button type="button" class="btn btn-success">
-							Options de tri
-						</button>
-					</div>
-					<div class="col-md-4">
-
-						<button type="button" class="btn btn-success">
-							créer une liste
-						</button>
-					</div>
-					<div class="col-md-4">
-						<div class="row">
-							<div class="col-md-6">
-
-								<button type="button" class="btn btn-success">
-									accès aux listes
-								</button>
-							</div>
-							<div class="col-md-6">
-
-								<button type="button" class="btn btn-success">
-									Supprimer une liste
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
+		<div class="row d-flex justify-content-center align-items-center" style="height: 200px;background-color: silver;">
+			<div type="button"class="col-md-5 border border-dark rounded-pill justify-content-center d-flex align-items-center btn btn-light" style="height: 150px;" id="Titre" onclick="">
+				<h1><strong>TO DO</br>LIST</strong></h1>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-4">
+		<div class="row" style="border-color: silver;border-right-style: solid;border-right-width: 20px;border-left-width: 20px;border-left-style: solid;;border-bottom-width: 20px;;border-bottom-style: solid">
+			<div class="col-md-12 rounded" style="height: 700px;">
+				<div class="row">
+					<div class="d-flex col-md-4 rounded justify-content-center align-items-center" style="height: 700px;">
+						
+						<div class="col-md-11 border border-dark rounded" style="height: 650px;background-color: silver;">
+							<table class="table table-hover">
+								<thead>
+								  <tr>
+									<p class="col text-center">Listes</p>
 
 
-				<table class="table">
-					<thead>
-						<tr>
-							<th>
-								#
-							</th>
-							<th>
-								Product
-							</th>
-							<th>
-								Payment Taken
-							</th>
-							<th>
-								Status
-							</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								1
-							</td>
-							<td>
-								TB - Monthly
-							</td>
-							<td>
-								01/04/2012
-							</td>
-							<td>
-								Default
-							</td>
-						</tr>
-						<tr class="table-active">
-							<td>
-								1
-							</td>
-							<td>
-								TB - Monthly
-							</td>
-							<td>
-								01/04/2012
-							</td>
-							<td>
-								Approved
-							</td>
-						</tr>
-						<tr class="table-success">
-							<td>
-								2
-							</td>
-							<td>
-								TB - Monthly
-							</td>
-							<td>
-								02/04/2012
-							</td>
-							<td>
-								Declined
-							</td>
-						</tr>
-						<tr class="table-warning">
-							<td>
-								3
-							</td>
-							<td>
-								TB - Monthly
-							</td>
-							<td>
-								03/04/2012
-							</td>
-							<td>
-								Pending
-							</td>
-						</tr>
-						<tr class="table-danger">
-							<td>
-								4
-							</td>
-							<td>
-								TB - Monthly
-							</td>
-							<td>
-								04/04/2012
-							</td>
-							<td>
-								Call in to confirm
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="col-md-8">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="row">
-							<div class="col-md-4">
-							</div>
-							<div class="col-md-4">
-							</div>
-							<div class="col-md-4">
-							</div>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+								  </tr>
+								  <tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+								  </tr>
+								  <tr>
+									<th scope="row">3</th>
+									<td colspan="2" style="text-decoration: line-through;">Larry the Bird</td>
+								  </tr>
+								  <tr>
+									<th scope="row">4</th>
+									<td>Mark</td>
+								  </tr>
+								  <tr>
+									<th scope="row">5</th>
+									<td>Jacob</td>
+								  </tr>
+								  <tr>
+									<th scope="row">6</th>
+									<td colspan="2">Larry the Bird</td>
+								  </tr>
+								  <tr>
+									<th scope="row">7</th>
+									<td>Mark</td>
+								  </tr>
+								  <tr>
+									<th scope="row">8</th>
+									<td>Jacob</td>
+								  </tr>
+								  <tr>
+									<th scope="row">9</th>
+									<td colspan="2">Larry the Bird</td>
+								  </tr>
+								  <tr>
+									<th scope="row">10</th>
+									<td>Mark</td>
+								  </tr>
+								  <tr>
+									<th scope="row">11</th>
+									<td>Jacob</td>
+								  </tr>
+								  <tr>
+									<th scope="row">12</th>
+									<td colspan="2">Larry the Bird</td>
+								  </tr>
+								</tbody>
+							  </table>
+							<nav>
+								<ul class="pagination d-flex align-items-end justify-content-center">
+									<li class="page-item">
+										<a class="page-link" href="#"> < </a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">1</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#"> > </a>
+									</li>
+								</ul>
+							</nav>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="row">
-							<div class="col-md-4">
-							</div>
-							<div class="col-md-4">
-							</div>
-							<div class="col-md-4">
-							</div>
-						</div>
+					<div class="d-flex flex-column justify-content-around align-items-center col-md-8 rounded" style="height: 700px;">
+						<div class="rounded" style="height: 150px;width: 90%;border: solid red 6px;background-color: silver;" ></div>
+						<div class="rounded" style="height: 150px;width: 90%;border: solid rgb(9, 241, 28) 6px;background-color: silver;"></div>
+						<div class="rounded" style="height: 150px;width: 90%;border: solid silver 6px;background-color: silver;"></div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<nav>
-					<ul class="pagination">
-						<li class="page-item">
-							<a class="page-link" href="#">Previous</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">1</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">2</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">3</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">4</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">5</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">Next</a>
-						</li>
-					</ul>
-				</nav>
 			</div>
 		</div>
 	</div>
-
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+		<label class="form-check-label" for="defaultCheck1">
+		  Default checkbox
+		</label>
+	  </div>
 
 </body>
 
