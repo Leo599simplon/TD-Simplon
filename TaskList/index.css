@@ -1,4 +1,4 @@
-.Urgent
+.rouge
 {
     width: 20px;
     height: 20px;
@@ -6,7 +6,7 @@
     color: red;
     border: solid red;
 }
-.normal
+.vert
 {
     width: 20px;
     height: 20px;
@@ -14,4 +14,13 @@
     background-color: rgb(255, 255, 255);
     color: green;
     border: solid green;
+}
+
+.LED
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+    border: solid black;
 }

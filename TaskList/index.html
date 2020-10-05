@@ -8,15 +8,15 @@
 
 	<title>ToDoList</title>
 
-
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 		crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
+	
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
 		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
 		crossorigin="anonymous"></script>
@@ -24,79 +24,124 @@
 		<script src="ToDoFunction.js"></script>
 </head>
 
-<body>
 
+
+
+
+<!--div cachée-->
+<div id="bteCheckbox" style="display: none">
+	Importance de la tâche </br>
+	<input type="checkbox" id="checkbox1"/>
+	Urgent
+	<input type="checkbox" id="checkbox2"/>
+	Normal
+</div>
+  
+  
+
+
+
+
+<body>
+<!--Titre-->
 	<div class="container-fluid">
 		<div class="row d-flex justify-content-center align-items-center" style="height: 200px;background-color: silver;">
-			<div type="button"class="col-md-5 border border-dark rounded-pill justify-content-center d-flex align-items-center btn btn-light" style="height: 150px;" id="Titre" onclick="">
+			<label for="buttonTitre" type="button"class="col-md-5 border border-dark rounded-pill justify-content-center d-flex align-items-center btn btn-light" style="height: 150px;" id="buttonTitre" onclick="ShowHideDiv()">
 				<h1><strong>TO DO</br>LIST</strong></h1>
-			</div>
+			</label>
 		</div>
-		<div class="row" style="border-color: silver;border-right-style: solid;border-right-width: 20px;border-left-width: 20px;border-left-style: solid;;border-bottom-width: 20px;;border-bottom-style: solid">
+
+		<!--Containeur gauche-->
+		<div class="row">
 			<div class="col-md-12 rounded" style="height: 700px;">
 				<div class="row">
 					<div class="d-flex col-md-4 rounded justify-content-center align-items-center" style="height: 700px;">
 						
 						<div class="col-md-11 border border-dark rounded" style="height: 650px;background-color: silver;">
+
+							<!--Tableau-->
 							<table class="table table-hover">
 								<thead>
 								  <tr>
 									<p class="col text-center">Listes</p>
-
-
 								  </tr>
 								</thead>
 								<tbody>
 								  <tr>
-									<th scope="row">1</th>
-									<td>Mark</td>
+									<th scope="row">
+										<div class="LED" id="led1"></div>
+									</th>
+									<td id="rang1"></td>
 								  </tr>
 								  <tr>
-									<th scope="row">2</th>
+									<th scope="row">
+										<div class="LED" id="led2"></div>
+									</th>
 									<td>Jacob</td>
 								  </tr>
 								  <tr>
-									<th scope="row">3</th>
+									<th scope="row">
+										<div class="LED" id="led3"></div>
+									</th>
 									<td colspan="2" style="text-decoration: line-through;">Larry the Bird</td>
 								  </tr>
 								  <tr>
-									<th scope="row">4</th>
+									<th scope="row">
+										<div class="LED" id="led4"></div>
+									</th>
 									<td>Mark</td>
 								  </tr>
 								  <tr>
-									<th scope="row">5</th>
+									<th scope="row">
+										<div class="LED" id="led5"></div>
+									</th>
 									<td>Jacob</td>
 								  </tr>
 								  <tr>
-									<th scope="row">6</th>
+									<th scope="row">
+										<div class="LED" id="led6"></div>
+									</th>
 									<td colspan="2">Larry the Bird</td>
 								  </tr>
 								  <tr>
-									<th scope="row">7</th>
+									<th scope="row">
+										<div class="LED" id="led7"></div>
+									</th>
 									<td>Mark</td>
 								  </tr>
 								  <tr>
-									<th scope="row">8</th>
+									<th scope="row">
+										<div class="LED" id="led8"></div>
+									</th>
 									<td>Jacob</td>
 								  </tr>
 								  <tr>
-									<th scope="row">9</th>
+									<th scope="row">
+										<div class="LED" id="led9"></div>
+									</th>
 									<td colspan="2">Larry the Bird</td>
 								  </tr>
 								  <tr>
-									<th scope="row">10</th>
+									<th scope="row">
+										<div class="LED" id="led10"></div>
+									</th>
 									<td>Mark</td>
 								  </tr>
 								  <tr>
-									<th scope="row">11</th>
+									<th scope="row">
+										<div class="LED" id="led11"></div>
+									</th>
 									<td>Jacob</td>
 								  </tr>
 								  <tr>
-									<th scope="row">12</th>
+									<th scope="row">
+										<div class="LED" id="led12"></div>
+									</th>
 									<td colspan="2">Larry the Bird</td>
 								  </tr>
 								</tbody>
 							  </table>
+							  		<!--Pagination-->
 							<nav>
 								<ul class="pagination d-flex align-items-end justify-content-center">
 									<li class="page-item">
@@ -112,6 +157,7 @@
 							</nav>
 						</div>
 					</div>
+					<!--Containeur droit-->
 					<div class="d-flex flex-column justify-content-around align-items-center col-md-8 rounded" style="height: 700px;">
 						<div class="rounded" style="height: 150px;width: 90%;border: solid red 6px;background-color: silver;" ></div>
 						<div class="rounded" style="height: 150px;width: 90%;border: solid rgb(9, 241, 28) 6px;background-color: silver;"></div>
@@ -121,6 +167,7 @@
 			</div>
 		</div>
 	</div>
+			<!--Test checkbox-->
 	<div class="form-check">
 		<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
 		<label class="form-check-label" for="defaultCheck1">
@@ -131,3 +178,6 @@
 </body>
 
 </html>
+
+
+
