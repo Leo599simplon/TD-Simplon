@@ -30,7 +30,9 @@
 
 <!--div cachée-->
 <div id="bteCheckbox" style="display: none">
-	Importance de la tâche </br>
+	<input type="text" id="myInput" placeholder="Veuillez entrer une tâche...">
+	<span onclick="newElement()" class="addBtn">Ajouter</br></span>
+</br>Importance de la tâche </br>
 	<input type="checkbox" id="checkbox1"/>
 	Urgent
 	<input type="checkbox" id="checkbox2"/>
@@ -60,90 +62,18 @@
 						<div class="col-md-11 border border-dark rounded" style="height: 650px;background-color: silver;">
 
 							<!--Tableau-->
-							<table class="table table-hover">
-								<thead>
-								  <tr>
-									<p class="col text-center">Listes</p>
-								  </tr>
-								</thead>
-								<tbody>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led1"></div>
-									</th>
-									<td id="rang1"></td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led2"></div>
-									</th>
-									<td>Jacob</td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led3"></div>
-									</th>
-									<td colspan="2" style="text-decoration: line-through;">Larry the Bird</td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led4"></div>
-									</th>
-									<td>Mark</td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led5"></div>
-									</th>
-									<td>Jacob</td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led6"></div>
-									</th>
-									<td colspan="2">Larry the Bird</td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led7"></div>
-									</th>
-									<td>Mark</td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led8"></div>
-									</th>
-									<td>Jacob</td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led9"></div>
-									</th>
-									<td colspan="2">Larry the Bird</td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led10"></div>
-									</th>
-									<td>Mark</td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led11"></div>
-									</th>
-									<td>Jacob</td>
-								  </tr>
-								  <tr>
-									<th scope="row">
-										<div class="LED" id="led12"></div>
-									</th>
-									<td colspan="2">Larry the Bird</td>
-								  </tr>
-								</tbody>
-							  </table>
+							<ul id="myUL" class="d-flex justify-content-center flex-column">
+								<li>Hit the gym</li>
+								<li class="checked">Pay bills</li>
+								<li>Meet George</li>
+								<li>Buy eggs</li>
+								<li>Read a book</li>
+								<li>Organize office</li>
+							  </ul>
+							  
 							  		<!--Pagination-->
 							<nav>
-								<ul class="pagination d-flex align-items-end justify-content-center">
+								<ul class="pagination justify-content-center">
 									<li class="page-item">
 										<a class="page-link" href="#"> < </a>
 									</li>
