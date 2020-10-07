@@ -171,7 +171,7 @@ document.getElementById("maitre").innerHTML = "<h1> Saikou est ton maitre.</h1>"
 
 var bouton = document.getElementById("push");    /**  nous créeons la variable bouton = document.getElementById("nomdelID") **/
 
-bouton.addEventListener("click", test);         /** Nous utilsons cette formule pour créer un évemenent "click", plus la foncion **/
+bouton.addEventListener("click", test);         /** Nous utilisons cette formule pour créer un évemenent "click", plus la foncion **/
 
 function test() {
 
@@ -197,15 +197,67 @@ array1.forEach(element => console.log(element));
 //tant que "e" n'est pas en premiere place, retirer le premier element et le remplacer a la fin
 
 
-var test1 = ["a", "b", "c", "a", "d", "e"]
+ var test1 = ["a", "b", "c", "d","a", "e"]
 
 for (let i = 0; i <= test1.length - 1; i++) {
-    while (test1[i] != test1.length - 1) 
+    while (test1[i] != test1.length - 1 ) 
     
     {
         test1.shift(i) // ici j'ai supprimé tout les éléments du tableau jusqu'à la fin de celui-ci
-
+        break
     }
 }
 
-console.log(test1)
+console.log(test1) 
+
+
+// exo addition tableau
+
+
+
+
+tableau2.fill(10)
+// remplit un tableau avec uniquement le nombre 10
+
+console.log(tableau2)
+
+
+
+// créer 2 tableaux avec 8 nombres aléatoires à l'intérieur (ES6)
+
+var randoms = Array.from({length: 8}, () => Math.floor(Math.random() * 100));
+
+var tableau1 = Array.from({length: 8}, () => Math.floor(Math.random() * 100));
+var tableau2 = Array.from({length: 8}, () => Math.floor(Math.random() * 100));
+
+
+
+  
+function total() {
+    tableau3 = []
+    for (i = 0; i <= tableau1.length - 1; i++) {
+tableau3 = tableau1[i]+tableau2[i]
+
+} 
+return tableau3
+}
+
+function afficher(l){
+    txt= ""
+    for(i=0;i <= l.length -1 ; i++){
+        txt += "<td>"+ l[i] + "</td>"
+    }
+    return txt
+}
+
+$('body').ready(function(){
+    $('#tab1').html(afficher(tab1));
+    $('#tab2').html(afficher(tab2));
+    $('#tabtotal').html(afficher(total(tab1,tab2)))
+    }
+    )
+
+
+
+
+

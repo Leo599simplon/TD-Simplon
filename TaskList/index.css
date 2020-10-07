@@ -1,29 +1,35 @@
 .rouge
 {
+    content: '';
     width: 20px;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     color: red;
     border: solid red;
 }
 .vert
-{
+{   content: '';
     width: 20px;
     height: 20px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
     color: green;
     border: solid green;
 }
 
+
+
 .LED
 {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    color: white;
-    border: solid black;
+  content: '';
+  top: 10px;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  color: white;
+  border: solid black;
 }
+
 
 /* Remove margins and padding from the list */
 ul {
@@ -65,19 +71,7 @@ ul li.checked {
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
+
 
 /* Style the close button */
 .close {

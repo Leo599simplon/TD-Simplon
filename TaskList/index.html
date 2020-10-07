@@ -21,21 +21,8 @@
 		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="index.css">
-	<script src="ToDoFunction.js"></script>
+	
 </head>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <body>
 	<!--Titre-->
@@ -51,7 +38,7 @@
 <div id="bteCheckbox" style="display: none !important;width: 300px;" class="d-flex flex-column justify-content-left align-items-center">
 	<input type="text" id="myInput" placeholder="Veuillez entrer une tâche..." style="direction: ltr; text-align: center;  border: none;" class="col-sm-10 rounded">
 	<span onclick="newElement()" class="addBtn">Ajouter</br></span>
-	<input type="checkbox" id="checkbox1" />
+	<input type="checkbox" id="checkbox1" onclick="urgent()" /> 
 	Urgent
 
 </div>
@@ -72,7 +59,7 @@
 
 							<!--Tableau-->
 							<ul id="myUL" class="align-self-stretch">
-								<li>Hit the gym</li>
+								<li class="d-flex justify-content-left"><div id="LED" class="LED" style="height: 30px;width: 30px;"></div>Hit the gym</li>
 								<li class="checked">Pay bills</li>
 								<li>Meet George</li>
 								<li>Buy eggs</li>
@@ -83,16 +70,16 @@
 							<!--Pagination-->
 							<nav style="height: 64px;">
 								<ul class="pagination">
-									<li class="page-item" style="padding-left: 30px;padding-right: 30px;">
+									<div class="page-item" style="padding-left: 30px;padding-right: 30px;">
 										<a class="page-link" href="#">
 											< </a>
-									</li>
-									<li class="page-item" style="padding-left: 30px;padding-right: 30px;">
+										</div>
+									<div class="page-item" style="padding-left: 30px;padding-right: 30px;">
 										<a class="page-link" href="#">1</a>
-									</li>
-									<li class="page-item" style="padding-left: 30px;padding-right: 30px;">
+									</div>
+									<div class="page-item" style="padding-left: 30px;padding-right: 30px;">
 										<a class="page-link" href="#"> > </a>
-									</li>
+									</div>
 								</ul>
 							</nav>
 
@@ -116,13 +103,90 @@
 			</div>
 		</div>
 	</div>
-	<!--Test checkbox-->
-	<div class="form-check">
-		<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-		<label class="form-check-label" for="defaultCheck1">
-			Default checkbox
-		</label>
-	</div>
+
+
+
+	
+	<script>
+		// rattacher un bouton croix à "li"
+		var myNodelist = document.getElementsByTagName("LI");
+		var i;
+		for (i = 0; i < myNodelist.length; i++) {
+		  var span = document.createElement("SPAN");
+		  var txt = document.createTextNode("\u00D7");
+		  span.className = "close";
+		  span.appendChild(txt);
+		  myNodelist[i].appendChild(span);
+		}
+		
+		// "cacher" la tâche avec le bouton croix
+		var close = document.getElementsByClassName("close");
+		var i;
+		for (i = 0; i < close.length; i++) {
+		  close[i].onclick = function() {
+			var div = this.parentElement;
+			div.style.display = "none";
+		  }
+		}
+		
+		// rayer la tâche onclick
+		var list = document.querySelector('ul');
+		list.addEventListener('click', function(ev) {
+		  if (ev.target.tagName === 'LI') {
+			ev.target.classList.toggle('checked');
+		  }
+		}, false);
+		
+		// créer une nouvelle tâche onclick "ajouter"
+		function newElement() {
+		  var li = document.createElement("li");
+		  var inputValue = document.getElementById("myInput").value;
+		  var t = document.createTextNode(inputValue);
+		  li.appendChild(t);
+		  if (inputValue === '') {
+			alert("Veuillez écrire une tâche");
+		  } else {
+			document.getElementById("myUL").appendChild(li);
+		  }
+		  document.getElementById("myInput").value = "";
+		
+		  var span = document.createElement("SPAN");
+		  var txt = document.createTextNode("\u00D7");
+		  span.className = "close";
+		  span.appendChild(txt);
+		  li.appendChild(span);
+		
+		  for (i = 0; i < close.length; i++) {
+			close[i].onclick = function() {
+			  var div = this.parentElement;
+			  div.style.display = "none";
+			}
+		  }
+		}
+
+	
+	// Faire apparaître le block pour créer une tâche quand on clique sur le titre
+		function ShowHideDiv() {
+    var bteCheckbox = document.getElementById("myInput");
+    bteCheckbox.style.display = "block"; "none";
+    var bteCheckbox = document.getElementById("bteCheckbox");
+    bteCheckbox.style.display = "block"; "none";
+}
+
+// activer les leds si la checkbox est cochée
+var bouton = document.getElementById("checkbox1");
+// si l'input de la checkbox1 est vrai, alors changer la couleur en rouge
+function urgent() {
+	if (bouton.checked == true) {
+		document.getElementById("LED").style.backgroundColor = "red";
+		}
+	else {
+		document.getElementById("LED").style.backgroundColor = "green";
+	}
+
+	
+}
+		</script>
 
 </body>
 
