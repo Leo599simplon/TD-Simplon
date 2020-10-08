@@ -22,6 +22,7 @@
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="index.css">
 
+
 </head>
 
 <body>
@@ -60,20 +61,22 @@
 
 
 							<!--Tableau-->
-							<ul id="myUL" class="align-self-stretch">
-								<li>1</li>
-								<li class="checked">2</li>
-								<li>3</li>
-								<li>4</li>
-								<li>5</li>
-								<li>6</li>
-							</ul>
+
+							<table class="table">
+								<thead>
+								  <tr>
+									<th>Liste</th>
+								  </tr>
+								</thead>
+								<tbody id="letterList">
+								</tbody>
+							  </table>
 
 							<!--Pagination-->
 							<nav style="height: 64px;">
 								<ul class="pagination">
 									<div class="page-item" style="padding-left: 30px;padding-right: 30px;">
-										<a class="page-link" href="#" onclick="previous()">
+										<a class="page-link" href="#"onclick="previous()">
 											< </a>
 									</div>
 									<div class="page-item" style="padding-left: 30px;padding-right: 30px;">
@@ -82,7 +85,7 @@
 										</a>
 									</div>
 									<div class="page-item" style="padding-left: 30px;padding-right: 30px;">
-										<a class="page-link" href="#" onclick="nextPage()"> > </a>
+										<a class="page-link" href="#"onclick="nextPage()"> > </a>
 									</div>
 								</ul>
 							</nav>
@@ -142,24 +145,17 @@
 		}, false);
 
 		// créer une nouvelle tâche onclick "ajouter"
-
-		
 		function newElement() {
 			var li = document.createElement("li");
 			var inputValue = document.getElementById("myInput").value;
 			var t = document.createTextNode(inputValue);
 			li.appendChild(t);
-
-
 			if (inputValue === '') {
 				alert("Veuillez écrire une tâche");
 			} else {
 				document.getElementById("myUL").appendChild(li);
 			}
 			document.getElementById("myInput").value = "";
-			var chiffre = 0
-			chiffre++
-			console.log(chiffre)
 
 			var span = document.createElement("SPAN");
 			var txt = document.createTextNode("\u00D7");
@@ -171,14 +167,6 @@
 			var div = document.createElement("DIV");
 			div.className = "LED";
 			li.appendChild(div);
-
-
-			if (bouton.checked == true) {
-				document.getElementsById("LED").style.backgroundColor = "red";
-			}
-			else {
-				document.getElementById("LED").style.backgroundColor = "green";
-			}
 		}
 
 		for (i = 0; i < close.length; i++) {
@@ -199,10 +187,19 @@
 			bteCheckbox.style.display = "block"; "none";
 		}
 
+		// activer les leds si la checkbox est cochée
+		var bouton = document.getElementById("checkbox1");
+		// si l'input de la checkbox1 est vrai, alors changer la couleur en rouge
+		function urgent() {
+			if (bouton.checked == true) {
+				document.getElementById("LED").style.backgroundColor = "red";
+			}
+			else {
+				document.getElementById("LED").style.backgroundColor = "green";
+			}
 
 
-
-
+		}
 
 	</script>
 

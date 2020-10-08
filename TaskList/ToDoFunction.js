@@ -35,3 +35,24 @@ function showList() {
   document.getElementById('myUL').innerHTML = tableList;
   showPageInfo();
 }
+
+
+
+// creer une variable chiffre et l'incrémenter 
+
+var chiffre = chiffre++
+
+// créer un tableau 
+
+var tableau = []
+
+// stocker la variable "chiffre" dans un tableau
+
+var ajoutTab = tableau.push(chiffre)
+
+// toute les fois ou la longueur du tableau fait +6, ajouter +1 à la variable "page"
+var page = 1
+for (let i = 0; i <= tableau.length-1; i++)
+{
+document.getElementById("pageInfo")=page
+}

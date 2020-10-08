@@ -197,7 +197,7 @@ array1.forEach(element => console.log(element));
 //tant que "e" n'est pas en premiere place, retirer le premier element et le remplacer a la fin
 
 
-var test1 = ["a", "b", "c", "a", "d", "e"]
+ /* var test1 = ["a", "b", "c", "a", "d", "e"]
 
 for (let i = 0; i <= test1.length - 1; i++) {
     while (test1[i] != test1.length - 1) 
@@ -206,6 +206,12 @@ for (let i = 0; i <= test1.length - 1; i++) {
         test1.shift(i) // ici j'ai supprimé tout les éléments du tableau jusqu'à la fin de celui-ci
         
     }
+   
 }
 
-console.log(test1)
+console.log(test1) 
+
+*/
+
+//testez ce code :)
+console.log(String.fromCharCode(9749));
