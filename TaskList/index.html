@@ -171,10 +171,8 @@
 			var div = document.createElement("DIV");
 			div.className = "LED";
 			li.appendChild(div);
-
-
 			if (bouton.checked == true) {
-				document.getElementsById("LED").style.backgroundColor = "red";
+				document.getElementById("LED").style.backgroundColor = "red";
 			}
 			else {
 				document.getElementById("LED").style.backgroundColor = "green";

@@ -11,8 +11,17 @@
  
 <body>
   <div class="container">
-    <table class="table">
+    <table class="table" id="monTableau">
       <thead>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="ajouteLigne('monTableau')">Ajouter</button>
+            <div class="input-group-text">
+              <input type="checkbox" aria-label="Checkbox for following text input">urgent
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="rentrer du texte svp" id="monTexte">
+        </div>
         <tr>
           <th>name</th>
         </tr>
