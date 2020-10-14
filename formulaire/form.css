@@ -1,9 +1,5 @@
-.background
+body
 {
-    background: linear-gradient(rgb(20, 145, 218)blue);
-    position: relative;
-    width: 500px;
-    height: 500px;
-
-    
+    background: linear-gradient( left right, rgb(20, 145, 218)blue);
+    display: flex;
 }
