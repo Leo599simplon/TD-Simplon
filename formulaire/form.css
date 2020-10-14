@@ -1,5 +1,119 @@
+
+
 body
 {
-    background: linear-gradient( left right, rgb(20, 145, 218)blue);
+    background: linear-gradient(45deg,#2794ed,#983afb);
     display: flex;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container
+{
+    
+    height: 800px;
+    width: 800px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre
+{
+    width: 800px;
+    height: 80px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+
+}
+
+.formulaire
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.listeTitre
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+h1
+{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 18px;
+    font-family: "CoreSansNSCW01-65Bold";
+}
+
+           
+.interieurInputNom
+{
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    border-style: hidden;
+    width: 230px;
+    height: 50px;   
+}
+
+.interieurInputBig
+{
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    border-style: hidden;
+    width: 600px;
+    height: 50px;   
+}
+
+.interieurInputIndicatif
+{
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    border-style: hidden;
+    width: 80px;
+    height: 50px;   
+}
+
+.interieurInputTel
+{
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    border-style: hidden;
+    width: 520px;
+    height: 50px;   
+}
+
+.sujet
+{
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    border-style: hidden;
+    width: 600px;
+    height: 50px;   
+}
+
+
+button
+{
+    border-style: hidden;
+    background-color:#ff4b5a;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    
+}
+
+.buttonText
+{
+    color: white;
 }
