@@ -48,6 +48,21 @@ body
     height: 40px;
 }
 
+.espaceLigne2
+
+{
+    widows: 100%;
+    height: 20px;
+}
+
+#espaceHaut
+
+
+{
+    widows: 100%;
+    height: 70px;
+}
+
 .champ
 {
     display: flex;
@@ -63,12 +78,6 @@ justify-content: space-between;
 align-items: center;   
 }
 
-.labelTxt
-{
- display: flex;
- justify-content: space-evenly;
- color: rgb(168, 168, 168)
-}
 
 
 #champ2
@@ -105,15 +114,19 @@ align-items: center;
 
 .input
 {
-    display: flex;
-    justify-content: space-between;
-    
+    display: flex;   
 }
 .formulaire
 {
     display: flex;
 }
 
+.blocNom
+{
+    display: flex;
+    flex-direction: column;
+    color: rgb(168, 168, 168)
+}
 
 
 .textPhone
@@ -147,6 +160,7 @@ align-items: center;
 {
     width: 100px;
     height: 50px;
+    margin-right: 25px;
 }
 
 #Phone
@@ -176,6 +190,11 @@ h1
     height: 50px;
 }
 
+#nom 
+
+{
+    margin-right: 28px;
+}
 button
 {
     border-style: hidden;
@@ -195,3 +214,16 @@ button
     width: 497px;
     height: 50px;   
 }
+
+
+.buttonText
+{
+    color: white;
+}
+
+#radio
+{    
+ flex-direction: row !important;
+}
+
+

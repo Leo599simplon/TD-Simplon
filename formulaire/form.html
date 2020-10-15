@@ -16,7 +16,7 @@
         <div class="titre">
             <h1><strong>event registration form</strong></h1>
         </div>
-       
+
 
         <form action="" method="post">
             <div class="formulaire">
@@ -25,20 +25,25 @@
                 <div class="espace"></div>
 
                 <div class="champ">
-                    
+                    <div class="champ" id="espaceHaut"></div>
+
                     <div class="champ" id="champ1">
                         <div class="txtName"><span>Name</span></div>
                         <div class="input">
+                            <div class="blocNom">
                             <input type="text" id="nom" name="nom" class="interieurInputNom">
+                            <span>First Name</span>
+                        </div>
+                        <div class="blocNom">
                             <input type="text" id="prénom" name="nom" class="interieurInputNom">
+                            <span>Last Name</span>
+                        </div>
                         </div>
                     </div>
-                    <div class="espaceLigne"><div class="labelTxt">
-                        <span>First Name</span>
-                        <span>Last Name</span>
+                    <div class="espaceLigne">
+                     
                     </div>
-                </div>
-                    
+
                     <div class="champ" id="champ2">
                         <div class="txtCompany"><span>Company</span></div>
                         <input type="textarea" id="entreprise" name="entreprise" class="interieurInputBig">
@@ -52,29 +57,71 @@
                     <div class="champ" id="champ4">
                         <div class="txtPhone"><span>Phone</span></div>
                         <div class="input">
+                            <div class="blocNom">
                             <input type="text" id="indicatif" name="Phone" class="inputPhone">
-                            <input type="text" id="Phone" name="Phone" class="inputPhone">
+                            <span class="indicatif">Area code</span>
                         </div>
-                      
+                        <div class="blocNom">
+                            <input type="text" id="Phone" name="Phone" class="inputPhone">
+                            <span class="telephone">Phone number</span>
+                        </div>
+                        </div>
+
                     </div>
                     <div class="espaceLigne">
-                    <div class="labelTxt">
-                        <span class="indicatif">Area code</span>
-                        <span class="telephone">Phone number</span>
+                 
                     </div>
-                </div>
-                    
+
                     <div class="champ" id="champ5">
-                        <div class="txtSubject"><span>Subject</span></div> 
+                        <div class="txtSubject"><span>Subject</span></div>
                         <select name="nom" size="1" class="sujet">
                             <option selected>choose option
                         </select>
                     </div>
+                    <div class="espaceLigne"></div>
+
+
+
+                    
+                    <div class="champ" id="radioTxt">
+                        <span>Are you an existing customer ?</span>
+                    </div>
+                    <div class="espaceLigne2"></div>
+
+                
+                    <div class="champ" id="radio"> <input type="radio" id="oui" name="oui" value="Yes">
+                        <label for="Oui">Yes</label>
+                        <input type="radio" id="non" name="non" value="No">
+                        <label for="Non">No</label></div>
+                    
+
+
+
+                    <div class="espaceLigne"></div>
+                    <div class="champ" id="register">
+                        <button><span class="buttonText">REGISTER</span></button>
+                    </div>
+
+
+
+
+
+
+
                 </div>
+
+
                 <div class="espace"></div>
 
+
+
+
+
+
         </form>
+
     </div>
+
 </body>
 
 </html>
