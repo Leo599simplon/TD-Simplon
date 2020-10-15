@@ -16,88 +16,65 @@
         <div class="titre">
             <h1><strong>event registration form</strong></h1>
         </div>
-        
-        <div class="formulaire">
-            <form action="" method="post">
+       
 
-                <div class="listeTitre">
-                    <span>Name</span>
-                    <span>Company</span>
-                    <span>Email</span>
-                    <span>Phone</span>
-                    <span>Subject</span>
-                </div>
+        <form action="" method="post">
+            <div class="formulaire">
 
 
+                <div class="espace"></div>
 
-
-                <div class="blocChamp">
-                    <div class="champ">
-                        <div class="label">
-
-                        </div>
+                <div class="champ">
+                    
+                    <div class="champ" id="champ1">
+                        <div class="txtName"><span>Name</span></div>
                         <div class="input">
                             <input type="text" id="nom" name="nom" class="interieurInputNom">
                             <input type="text" id="prénom" name="nom" class="interieurInputNom">
                         </div>
-                        <div class="nom">First Name</div>
-                        <div class="prénom">Last Name</div>
                     </div>
-
-
-
-
-
-                    <div class="champ">
+                    <div class="espaceLigne"><div class="labelTxt">
+                        <span>First Name</span>
+                        <span>Last Name</span>
+                    </div>
+                </div>
+                    
+                    <div class="champ" id="champ2">
+                        <div class="txtCompany"><span>Company</span></div>
                         <input type="textarea" id="entreprise" name="entreprise" class="interieurInputBig">
                     </div>
-                    <div class="champ">
-
+                    <div class="espaceLigne"></div>
+                    <div class="champ" id="champ3">
+                        <div class="txtEmail"><span>Email</span></div>
                         <input type="email" id="Email" name="Email" class="interieurInputBig">
                     </div>
-                    <div class="champ">
-
-                        <input type="text" id="indicatif" name="Phone" class="interieurInputIndicatif">
-                        <input type="text" id="Phone" name="Phone" class="interieurInputTel">
-                        <div class="indicatif">Area code</div>
-                        <div class="telephone">Phone number</div>
+                    <div class="espaceLigne"></div>
+                    <div class="champ" id="champ4">
+                        <div class="txtPhone"><span>Phone</span></div>
+                        <div class="input">
+                            <input type="text" id="indicatif" name="Phone" class="inputPhone">
+                            <input type="text" id="Phone" name="Phone" class="inputPhone">
+                        </div>
+                      
                     </div>
-                    <div class="champ">
+                    <div class="espaceLigne">
+                    <div class="labelTxt">
+                        <span class="indicatif">Area code</span>
+                        <span class="telephone">Phone number</span>
+                    </div>
+                </div>
+                    
+                    <div class="champ" id="champ5">
+                        <div class="txtSubject"><span>Subject</span></div> 
                         <select name="nom" size="1" class="sujet">
                             <option selected>choose option
                         </select>
                     </div>
                 </div>
+                <div class="espace"></div>
 
-                <div class="Radio">
-                    <span>Are you an existing customer ?</span>
-                    <input type="radio" id="oui" name="oui" value="Yes">
-                    <label for="Oui">Oui</label>
-                    <input type="radio" id="non" name="non" value="No">
-                    <label for="Non">Non</label>
-                </div>
-
-
-
-                <div class="register">
-                    <button><span class="buttonText">REGISTER</span></button>
-                </div>
-
-
-
-
-            </form>
-
-
-
-
-            </form>
-        </div>
-
+        </form>
     </div>
-
-
-
 </body>
 
 </html>
