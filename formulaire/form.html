@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="form.css">
     <link href="//db.onlinewebfonts.com/c/c5171bfb33c0acee37832357f1c3a788?family=CoreSansNSCW01-65Bold"
         rel="stylesheet" type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/a8a61c251907c1e48b8224c5956c7110?family=Mentone+Lig" rel="stylesheet"
+        type="text/css" />
 
 </head>
 
@@ -28,78 +30,87 @@
                     <div class="champ" id="espaceHaut"></div>
 
                     <div class="champ" id="champ1">
-                        <div class="txtName"><span>Name</span></div>
+                        <div class="txtName"><span class="policeTexte">Name</span></div>
                         <div class="input">
                             <div class="blocNom">
-                            <input type="text" id="nom" name="nom" class="interieurInputNom">
-                            <span>First Name</span>
-                        </div>
-                        <div class="blocNom">
-                            <input type="text" id="prénom" name="nom" class="interieurInputNom">
-                            <span>Last Name</span>
-                        </div>
+                                <input type="text" id="nom" name="nom" class="interieurInputNom">
+                                <span class="espaceTexte">First Name</span>
+                            </div>
+                            <div class="blocNom">
+                                <input type="text" id="prénom" name="nom" class="interieurInputNom">
+                                <span class="espaceTexte">Last Name</span>
+                            </div>
                         </div>
                     </div>
                     <div class="espaceLigne">
-                     
+
                     </div>
 
                     <div class="champ" id="champ2">
-                        <div class="txtCompany"><span>Company</span></div>
+                        <div class="txtCompany"><span class="policeTexte">Company</span></div>
                         <input type="textarea" id="entreprise" name="entreprise" class="interieurInputBig">
                     </div>
                     <div class="espaceLigne"></div>
                     <div class="champ" id="champ3">
-                        <div class="txtEmail"><span>Email</span></div>
+                        <div class="txtEmail"><span class="policeTexte">Email</span></div>
                         <input type="email" id="Email" name="Email" class="interieurInputBig">
                     </div>
                     <div class="espaceLigne"></div>
                     <div class="champ" id="champ4">
-                        <div class="txtPhone"><span>Phone</span></div>
+                        <div class="txtName"><span class="policeTexte">Phone</span></div>
                         <div class="input">
                             <div class="blocNom">
-                            <input type="text" id="indicatif" name="Phone" class="inputPhone">
-                            <span class="indicatif">Area code</span>
-                        </div>
-                        <div class="blocNom">
-                            <input type="text" id="Phone" name="Phone" class="inputPhone">
-                            <span class="telephone">Phone number</span>
-                        </div>
+                                <input type="text" id="indicatif" name="Phone" class="inputPhone">
+                                <span class="espaceTexte">Area code</span>
+                            </div>
+                            <div class="blocNom">
+                                <input type="text" id="Phone" name="Phone" class="inputPhone">
+                                <span class="espaceTexte">Phone number</span>
+                            </div>
                         </div>
 
                     </div>
                     <div class="espaceLigne">
-                 
+
                     </div>
 
                     <div class="champ" id="champ5">
-                        <div class="txtSubject"><span>Subject</span></div>
+                        
+                        <div class="txtSubject"><span class="policeTexte">Subject</span></div>
+                        <div class="petitChamp">
                         <select name="nom" size="1" class="sujet">
-                            <option selected>choose option
+                            <option selected>Choose option
                         </select>
                     </div>
-                    <div class="espaceLigne"></div>
+                </div>
+                    <div class="espaceLigne3"></div>
 
 
 
-                    
+
                     <div class="champ" id="radioTxt">
-                        <span>Are you an existing customer ?</span>
+                        <span class="policeTexte">Are you an existing customer ?</span>
                     </div>
                     <div class="espaceLigne2"></div>
 
-                
-                    <div class="champ" id="radio"> <input type="radio" id="oui" name="oui" value="Yes">
-                        <label for="Oui">Yes</label>
-                        <input type="radio" id="non" name="non" value="No">
-                        <label for="Non">No</label></div>
-                    
+
+                    <div class="champ" id="radio">
+                        <div class="blocYes">
+                            <input type="radio" name="demo6" class="demo6" id="demo6-a" checked>
+                            <label for="demo6-a" class="policeTexteBas">Yes</label>
+                        </div>
+
+
+                        <div class="blocNo">
+                            <input type="radio" name="demo6" class="demo6" id="demo6-b" >
+                            <label for="demo6-b" class="policeTexteBas">No</label></div>
+                    </div>
 
 
 
                     <div class="espaceLigne"></div>
                     <div class="champ" id="register">
-                        <button><span class="buttonText">REGISTER</span></button>
+                        <button><span class="buttonText"><strong>REGISTER</strong></span></button>
                     </div>
 
 
