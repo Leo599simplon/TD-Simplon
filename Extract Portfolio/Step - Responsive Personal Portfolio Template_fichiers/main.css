@@ -7,6 +7,7 @@ Primary Use    : Personal, Porfolio
 /*-----------------------------------------------------------------
 Table Of Contents
 --------------------------------
+ 0. Entrance transition
  1. Global Styles
  2. Color Switcher
  3. Loading
@@ -26,6 +27,44 @@ Table Of Contents
 -----------------------------------------------------------------*/
 
 /* --------------------------------------
+   0. Entrance transition
+-----------------------------------------*/
+
+ @-webkit-keyframes puff-out-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+  }
+  @keyframes puff-out-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+  }
+  
+
+/* --------------------------------------
    1. Global Styles
 -----------------------------------------*/
 
@@ -41,6 +80,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #282929;
     overflow-x: hidden;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -133,6 +173,8 @@ h6 {
     vertical-align: middle;
     height: 100vh;
     min-height: 100%;
+    -webkit-animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) reverse both;
+    animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) reverse both;
 }
 
 .main-btn {
@@ -376,6 +418,8 @@ h6 {
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 999;
+    -webkit-animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) reverse both;
+    animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) reverse both;
 }
 
 .navbar.active-nav {
@@ -476,6 +520,8 @@ h6 {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    -webkit-animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) reverse both;
+    animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) reverse both;
 }
 
 .home .overlay {

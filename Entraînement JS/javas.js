@@ -213,5 +213,5 @@ console.log(test1)
 
 */
 
-//testez ce code :)
+//exemple charCode Café
 console.log(String.fromCharCode(9749));
