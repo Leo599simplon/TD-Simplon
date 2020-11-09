@@ -37,3 +37,7 @@ btnPlay.addEventListener('click', function(e) {
   movingBall.play();
 });
 
+
+function name(params) {
+  
+}
