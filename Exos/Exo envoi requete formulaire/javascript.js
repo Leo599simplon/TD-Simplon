@@ -7,13 +7,14 @@ let request = new XMLHttpRequest();
 form.addEventListener('submit', (e) => {
     
     e.preventDefault();
-    request.onreadystatechange = function() {
+    request.onreadystatechange = () => 
     
-    if (this.readyState == 4 && this.status == 200) {
-        var response = JSON.parse(this.responseText);
-        result.innerHTML = response.postData["text"];
-        
-    }
+    {
+        if (this.readyState == 4 && this.status == 200) 
+        {
+            var response = JSON.parse(this.responseText);
+            result.innerHTML = response.postData['text'];
+        }
 };
 request.open("POST", "https://mockbin.com/request");
 request.setRequestHeader("Content-Type", "application/json");
